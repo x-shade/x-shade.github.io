@@ -1,0 +1,65 @@
+body{
+    background: url(../img/bg.jpg) top center no-repeat black;
+    font-family: Tahoma, sans-serif;
+    color: white;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+header{
+    height: 189px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.wrapper{
+    width: 863px;
+    margin: 0 auto;
+}
+
+.contacts{
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 16px;
+}
+.contacts a{
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.menu{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+li{
+    display: inline-block;
+    margin-bottom: 55px;
+}
+
+li a{
+    height: 100%;
+    font-size: 16px;
+    text-align: center;
+}
+li img{
+    border: 4px ridge #ccc;
+}
+
+li span{
+    display: block;
+}
+
+.copyright{
+    margin-bottom: 10px;
+    text-align: center;
+}
