@@ -1,0 +1,149 @@
+@font-face{
+    font-family: Open Sans;
+    src: url(../fonts/open-sans.ttf);
+}
+
+html, body {
+    font-family: 'Open Sans', sans-serif; 
+}
+
+body{
+    background-color: #f9f9f9;
+}
+
+footer{
+    background-color: #ccc;
+    height: 40px;
+    position: relative;
+	overflow: hidden; 
+    color: #333;
+}
+
+.all {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: white;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+a{
+    text-decoration: none;
+}
+
+.topmenu{
+    margin: 40px 0 40px; 
+    background: url(../img/menu-bg.jpg) repeat-x;
+}
+
+.topmenu li{
+    display: inline-block;
+    height: 40px;
+    width: 130px; 
+    font: 15pt 'Open Sans';
+}
+
+.topmenu li a{
+    display: block;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    text-shadow: 1px 1px rgba(0,0,0,0.5);
+}
+
+.topmenu li a:hover{
+    background-color: #464646; 
+    padding-left: -1px;
+    padding-right: -1px;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+}
+
+.sidebar{
+    float: left;
+    border: 1px solid #ccc;
+}
+
+.categories li{
+    height: 40px;
+    width: 300px;
+    border-bottom: 1px solid #ccc;
+}
+
+.categories li:last-child{
+    border-bottom: 0;
+}
+
+.categories li a{
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    line-height: 40px;
+    color: #666;
+}
+
+.categories li a:hover{
+    font-weight: bold;
+    background-color: #f9f9f9;
+    padding-left: 30px;
+}
+
+article{
+    width: 65%;
+    float: right;
+    margin-bottom: 50px;
+    font: 13pt/20pt 'Open Sans';
+}
+
+.photo{
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.description{
+    margin: 30px auto;
+}
+
+.container{
+	position: relative;
+	overflow: hidden; 
+}
+
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+
+.links{
+    width: 70%;
+    float: left;
+}
+
+.links li{
+    display: inline-block;
+    height: 40px;
+    width: 130px;
+    font: 13pt 'Open Sans';
+}
+
+.links li a{
+    display: block;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    color: inherit;
+}
+
+.links li a:hover{
+    text-decoration: underline;
+}
+
+.copyright{
+    width: 20%;
+    padding: 10px 25px;
+    float: right;
+    text-align: right;
+}
