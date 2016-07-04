@@ -167,6 +167,10 @@ footer{
     padding-bottom: 10px;
 }
 
+.triangle{
+	font-size: 10px;
+}
+
 .info{
     width: 210px;
     background-color: #edeef0;
