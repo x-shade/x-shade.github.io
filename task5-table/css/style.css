@@ -1,0 +1,57 @@
+body{
+    background-color: #ffd;
+}
+
+table{
+    margin: 10px auto;
+    border: 11px solid #ffd;
+}
+
+td{
+    width: 60px;
+    border: 10px solid black;
+    background-color: white;
+}
+
+.r1, 
+.r4, 
+.r5{
+    height: 60px;
+}
+.r2, 
+.r3{
+    height: 120px;
+}
+
+.c1{
+    width: 40px;
+}
+
+.c4{
+    width: 120px;
+}
+
+.c23{
+    width: 120px;
+}
+
+.r6,
+.r7{
+    height: 36px;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.black{
+    background-color: #333;
+}
+
+.yellow{
+    background-color: #ff0;
+}
