@@ -103,7 +103,7 @@ header{
 /*---END HEADER---*/
 
 .wrapper{
-    height: 100vh;
+    height: 95vh;
     min-width: 560px;
     min-height: 613px;
     background: #9cc url(../img/bg.gif) center center no-repeat; 
