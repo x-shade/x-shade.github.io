@@ -36,6 +36,13 @@ body{
     margin: 0 3px;
 }
 
+.phones:before{
+    content: "";
+    width: 22px;
+    height: 21px;
+    background-image: url(../img/phone.png);
+}
+
 .phones a{
     font-family: Arial, sans-serif;
     font-size: 18px;
@@ -53,6 +60,14 @@ body{
     box-shadow: 1.5px 2.598px 3px 0px rgb( 150, 150, 150 );
     color: #ccc;
     font-size: 10px;
+}
+
+.before_form:before{
+     content: "";
+    width: 14px;
+    height: 18px;
+    background-image: url(../img/authoriz.png);
+    margin-right: 3px;
 }
 
 .register input[type="text"],
@@ -89,6 +104,24 @@ input[type="submit"]:hover{
     width: 73px;
     height: 27px;
     padding: 0 3px;
+}
+
+.home{
+    width: 12px;
+    height: 12px;
+    background: url(../img/home.png) center no-repeat;
+}
+
+.sitemap{
+    width: 14px;
+    height: 12px;
+    background: url(../img/sitemap.png) center no-repeat;
+}
+
+.letter{
+    width: 12px;
+    height: 12px;
+    background: url(../img/email.png) center no-repeat;
 }
 
 /*---TOP END---*/
@@ -173,6 +206,17 @@ h1 span{
     justify-content: center;
     align-items: center;
     margin-left: 15px;
+}
+
+.cart a{
+    display: flex;
+}
+
+.cart a:before{
+    content: "";
+    width: 21px;
+    height: 17px;
+    background-image: url(../img/cart.png);
 }
 
 h4 span{
@@ -345,20 +389,29 @@ legend{
     color: #114165;
 }
 
+.sidebar h2:before{
+    content: "";
+    width: 22px;
+    height: 21px;
+    background-image: url(../img/catalog.png);
+}
+
 h3{
-    width: 152px;
+    width: 129px;
     height: 26px;
     border: 1px solid rgb( 121, 135, 141 );
     border-radius: 15px;
     display: flex;
     align-items: center;
-    padding-left: 3px;
+    background: url(../img/tyre.png) 2px center no-repeat;
+    padding-left: 26px;
     text-align: left;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
     color: #114165;
 }
+
 
 .sidebar ul{
     color: #465961;
@@ -426,6 +479,13 @@ h5{
 }
 
 .product a{
+    display: flex;
+    background-color: white;
+    border: 1px solid rgb( 164, 174, 177 );
+    border-radius: 7px;
+}
+
+.product div{
     display: flex;
     width: 130px;
     height: 130px;
