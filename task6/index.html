@@ -13,33 +13,33 @@
             <header>
                 <div class="top">
                     <div class="phones">
-                        <img src="img/phone.png">
                         <a href="tel:+380441234567">(044)123-45-67</a>
                         <a href="tel:+380445678910">(044)567-89-10</a>
                     </div>
                     
                     <div class="register">
-                        <img src="img/authoriz.png">
                         
-                        <form action="#">
-                            <input type="text" name="login" placeholder="логин" size="12" required>
-                            
-                            <input type="password" name="password" placeholder="пароль" size="12" required>
-                        
-                            <input type="submit" value="вход">
-                            
-                            <span></span>
-                            
-                            <input type="submit" value="регистрация">
-                        </form>
+                        <div class="before_form">
+                            <form action="#">
+                                <input type="text" name="login" placeholder="логин" size="12" required>
+
+                                <input type="password" name="password" placeholder="пароль" size="12" required>
+
+                                <input type="submit" value="вход">
+
+                                <span></span>
+
+                                <input type="submit" value="регистрация">
+                            </form>
+                        </div>
                         
                         <a class="forgot" href="#">забыли пароль?</a>
                     </div>
                     
                     <div class="options">
-                        <a href="#"><img src="img/home.png"></a>
-                        <a href="#"><img src="img/sitemap.png"></a>
-                        <a href="email:info@zazor.com.ua"><img src="img/email.png"></a>
+                        <a href="#" class="home"></a>
+                        <a href="#" class="sitemap"></a>
+                        <a href="email:info@zazor.com.ua" class="letter"></a>
                     </div>
 
                 </div>
@@ -63,9 +63,10 @@
                     </ul>
                     
                      <section class="cart">
-                         <a href="#"><img src="img/cart.png"></a>
-                         <h4><a href="#">товаров: <span>0</span></a></h4>
-                         <h4><a href="#">на сумму: <span>0,00 грн</span></a></h4>
+                         <a href="#">
+                            <h4>товаров: <span>0</span></h4>
+                            <h4>на сумму: <span>0,00 грн</span></h4>
+                         </a>
                     </section>
                 </nav>
         
@@ -291,18 +292,9 @@
 
                 <div class="content">
                     <aside class="left sidebar">
-                        <h2><img src="img/catalog.png"><span>Каталог продукции:</span></h2>
+                        <h2>Каталог продукции:</h2>
                         
-                        <h3><img src="img/tyre.png"><a href="#">Шины</a></h3>
-                        
-                        <ul>
-                            <li><a href="#">Наименование 1</a></li>
-                            <li><a href="#">Наименование 2</a></li>
-                            <li><a href="#">Наименование 3</a></li>
-                            <li><a href="#">Наименование 4</a></li>
-                        </ul>
-                        
-                        <h3><img src="img/tyre.png"><a href="#">Диски</a></h3>
+                        <h3><a href="#">Шины</a></h3>
                         
                         <ul>
                             <li><a href="#">Наименование 1</a></li>
@@ -311,7 +303,16 @@
                             <li><a href="#">Наименование 4</a></li>
                         </ul>
                         
-                        <h3><img src="img/tyre.png"><a href="#">Болты</a></h3>
+                        <h3><a href="#">Диски</a></h3>
+                        
+                        <ul>
+                            <li><a href="#">Наименование 1</a></li>
+                            <li><a href="#">Наименование 2</a></li>
+                            <li><a href="#">Наименование 3</a></li>
+                            <li><a href="#">Наименование 4</a></li>
+                        </ul>
+                        
+                        <h3><a href="#">Болты</a></h3>
                         
                         <ul>
                             <li><a href="#">Наименование 1</a></li>
@@ -322,149 +323,184 @@
                     </aside>
 
                     <article>
-                        <section class="product">
-                            <h5>Gooodyear</h5>
-                            
-                            <p>Ultra grip extreme</p>
-                            
-                            <figure>
-                                
-                                <a href="#"><img src="img/photo.jpg" alt="goodyear"></a>
-                                
-                                <figcaption>90.00 грн</figcaption>
-                                
-                            </figure>
-                            
-                        </section>
-                        
-                        <section class="product">
-                            <h5>Nokian</h5>
-                            
-                            <p>Hakkapellitta R</p>
-                            
-                            <figure>
-                                
-                                <a href="#"><img src="img/photo.jpg" alt="nokian"></a>
-                                
-                                <figcaption>115.00 грн</figcaption>
-                                
-                            </figure>
-                            
-                        </section>
-                        
-                        <section class="product">
-                            <h5>Hankook</h5>
-                            
-                            <p>K 708 155/65 R14</p>
-                            
-                            <figure>
-                                
-                                <a href="#"><img src="img/photo.jpg" alt="hankook"></a>
-                                
-                                <figcaption>393.00 грн</figcaption>
-                                
-                            </figure>
-                            
-                        </section>
-                        
-                        <section class="product">
-                            <h5>Gooodyear</h5>
-                            
-                            <p>Ultra grip extreme</p>
-                            
-                            <figure>
-                                
-                                <a href="#"><img src="img/photo.jpg" alt="goodyear"></a>
-                                
-                                <figcaption>90.00 грн</figcaption>
-                                
-                            </figure>
-                            
-                        </section>
-                        
-                        <section class="product">
-                            <h5>Nokian</h5>
-                            
-                            <p>Hakkapellitta R</p>
-                            
-                            <figure>
-                                
-                                <a href="#"><img src="img/photo.jpg" alt="nokian"></a>
-                                
-                                <figcaption>115.00 грн</figcaption>
-                                
-                            </figure>
-                            
-                        </section>
-                        
-                        <section class="product">
-                            <h5>Hankook</h5>
-                            
-                            <p>K 708 155/65 R14</p>
-                            
-                            <figure>
-                                
-                                <a href="#"><img src="img/photo.jpg" alt="hankook"></a>
-                                
-                                <figcaption>393.00 грн</figcaption>
-                                
-                            </figure>
-                            
-                        </section>
+                        <a href="#">
+                            <section class="product">
+                                <h5>Gooodyear</h5>
 
-                        <section class="product">
-                            <h5>Gooodyear</h5>
-                            
-                            <p>Ultra grip extreme</p>
-                            
-                            <figure>
-                                
-                                <a href="#"><img src="img/photo.jpg" alt="goodyear"></a>
-                                
-                                <figcaption>90.00 грн</figcaption>
-                                
-                            </figure>
-                            
-                        </section>
-                        
-                        <section class="product">
-                            <h5>Nokian</h5>
-                            
-                            <p>Hakkapellitta R</p>
-                            
-                            <figure>
-                                
-                                <a href="#"><img src="img/photo.jpg" alt="nokian"></a>
-                                
-                                <figcaption>115.00 грн</figcaption>
-                                
-                            </figure>
-                            
-                        </section>
-                        
-                        <section class="product">
-                            <h5>Hankook</h5>
-                            
-                            <p>K 708 155/65 R14</p>
-                            
-                            <figure>
-                                
-                                <a href="#"><img src="img/photo.jpg" alt="hankook"></a>
-                                
-                                <figcaption>393.00 грн</figcaption>
-                                
-                            </figure>
-                            
-                        </section>
+                                <p>Ultra grip extreme</p>
 
+                                <figure>
 
+                                    <div>
+                                        <img src="img/photo.jpg" alt="goodyear">
+                                    </div>
+
+                                    <figcaption>90.00 грн</figcaption>
+
+                                </figure>
+
+                            </section>
+                        </a>
+                        
+                        <a href="#">
+                            <section class="product">
+                                <h5>Nokian</h5>
+
+                                <p>Hakkapellitta R</p>
+
+                                <figure>
+
+                                    <div>
+                                        <img src="img/photo.jpg" alt="goodyear">
+                                    </div>
+
+                                    <figcaption>115.00 грн</figcaption>
+
+                                </figure>
+
+                            </section>
+                        </a>
+                        
+                        <a href="#">
+                            <section class="product">
+                                <h5>Hankook</h5>
+
+                                <p>K 708 155/65 R14</p>
+
+                                <figure>
+
+                                    <div>
+                                        <img src="img/photo.jpg" alt="goodyear">
+                                    </div>
+
+                                    <figcaption>393.00 грн</figcaption>
+
+                                </figure>
+
+                            </section>
+                        </a>
+                        
+                        <a href="#">
+                            <section class="product">
+                                <h5>Gooodyear</h5>
+
+                                <p>Ultra grip extreme</p>
+
+                                <figure>
+
+                                    <div>
+                                        <img src="img/photo.jpg" alt="goodyear">
+                                    </div>
+
+                                    <figcaption>90.00 грн</figcaption>
+
+                                </figure>
+
+                            </section>
+                        </a>
+                        
+                        <a href="#">
+                            <section class="product">
+                                <h5>Nokian</h5>
+
+                                <p>Hakkapellitta R</p>
+
+                                <figure>
+
+                                    <div>
+                                        <img src="img/photo.jpg" alt="goodyear">
+                                    </div>
+
+                                    <figcaption>115.00 грн</figcaption>
+
+                                </figure>
+
+                            </section>
+                        </a>
+                        
+                        <a href="#">
+                            <section class="product">
+                                <h5>Hankook</h5>
+
+                                <p>K 708 155/65 R14</p>
+
+                                <figure>
+
+                                    <div>
+                                        <img src="img/photo.jpg" alt="goodyear">
+                                    </div>
+
+                                    <figcaption>393.00 грн</figcaption>
+
+                                </figure>
+
+                            </section>
+                        </a>
+                        
+                        <a href="#">
+                            <section class="product">
+                                <h5>Gooodyear</h5>
+
+                                <p>Ultra grip extreme</p>
+
+                                <figure>
+
+                                    <div>
+                                        <img src="img/photo.jpg" alt="goodyear">
+                                    </div>
+
+                                    <figcaption>90.00 грн</figcaption>
+
+                                </figure>
+
+                            </section>
+                        </a>
+                        
+                        <a href="#">
+                            <section class="product">
+                                <h5>Nokian</h5>
+
+                                <p>Hakkapellitta R</p>
+
+                                <figure>
+
+                                    <div>
+                                        <img src="img/photo.jpg" alt="goodyear">
+                                    </div>
+
+                                    <figcaption>115.00 грн</figcaption>
+
+                                </figure>
+
+                            </section>
+                        </a>
+                        
+                        <a href="#">
+                            <section class="product">
+                                <h5>Hankook</h5>
+
+                                <p>K 708 155/65 R14</p>
+
+                                <figure>
+
+                                    <div>
+                                        <img src="img/photo.jpg" alt="goodyear">
+                                    </div>
+
+                                    <figcaption>393.00 грн</figcaption>
+
+                                </figure>
+
+                            </section>
+                        </a>
+                        
                     </article>
 
                     <aside class="right sidebar">
-                        <h2><img src="img/catalog.png">Бренды:</h2>
+                        <h2>Бренды:</h2>
                         
                         <form id="brands" action="#">
-                            <h3><img src="img/tyre.png">Шины</h3>
+                            <h3>Шины</h3>
 
                             <ul>
                                 <li><input type="checkbox" id="tyre-1"> <label for="tyre-1">Бренд 1</label></li>
@@ -472,7 +508,7 @@
                                 <li><input type="checkbox" id="tyre-3"> <label for="tyre-3">Бренд 3</label></li>
                             </ul>
 
-                            <h3><img src="img/tyre.png">Диски</h3>
+                            <h3>Диски</h3>
 
                             <ul>
                                 <li><input type="checkbox" id="disc-1"> <label for="disc-1">Бренд 1</label></li>
