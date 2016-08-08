@@ -1,0 +1,1047 @@
+@font-face {
+    font-family: 'League Gothic';
+    src: url('../fonts/leaguegothic/leaguegothicregular-webfont.eot');
+    src: url('../fonts/leaguegothic/leaguegothicregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic/leaguegothicregular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic/leaguegothicregular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic/leaguegothicregular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans Light';
+    src: url('../fonts/opensans_light/opensans-light-webfont.eot');
+    src: url('../fonts/opensans_light/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans_light/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans_light/opensans-light-webfont.woff') format('woff'),
+         url('../fonts/opensans_light/opensans-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans ExtraBold';
+    src: url('../fonts/opensans_extrabold/opensans-extrabold-webfont.eot');
+    src: url('../fonts/opensans_extrabold/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans_extrabold/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans_extrabold/opensans-extrabold-webfont.woff') format('woff'),
+         url('../fonts/opensans_extrabold/opensans-extrabold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a, div, section, article, aside, nav, ul, li, img{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'OpenSans Light', Arial, sans-serif; 
+    font-size: 16px;
+}
+
+/*---HEADER START---*/
+
+header{
+    background: url(../img/bg.jpg) center 0;
+    padding-top: 68px;
+}
+
+/*---LOGO---*/
+
+.navigation{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 960px;
+    margin: 0 auto;
+    font-family: 'League Gothic';
+    text-transform: uppercase;
+    color: white;
+}
+
+.logo{
+    position: relative;
+    
+}
+
+.logo__gradient{
+    display: block;
+    position: absolute;
+    left: 127px;
+    top: 4px;
+    width: 30px;
+    height: 36px;
+    background: url(../img/er.png);
+}
+
+.logo__link{
+    display: block;
+    font-size: 48px;
+    text-shadow: 0px 2px 2px rgb(0, 0, 0);
+}
+
+.logo__link_end{
+    color: #35273d;
+    text-shadow: none;
+}
+
+/*---TOP MENU---*/
+
+.menu{
+    font-size: 24px;
+}
+
+.menu__link{
+    margin: 0 13px;
+    padding: 0 6px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.menu__link:hover,
+.menu__link:active{
+    border-bottom: 2px solid #edbfff;
+}
+
+/*---SLIDER---*/
+
+.slider{
+    margin-top: 170px;
+}
+
+.slider__wrapper{
+    
+}
+
+.slider__bar{
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 400px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.slider__arrow{
+    display: block;
+    background-image: url("../img/sprite.png");
+    background-position: 0 -65px;
+    width: 31px;
+    height: 43px;
+}
+
+.slider__arrow_right{
+    background-image: url("../img/sprite.png");
+    background-position: -33px -65px;
+}
+
+.article{
+    width: 960px;
+    text-shadow: 0px 2px 2px rgb( 0, 0, 0 );
+}
+
+.article__link{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 400px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.article__wrapper{
+    width: 507px;
+    height: 234px;
+    margin-top: 85px;
+}
+
+.article__first_header{
+    font-family: 'League Gothic';
+    font-size: 60px;
+    text-transform: capitalize;
+    color: #fefefe;
+}
+
+.article__second_header{
+    font-family: 'League Gothic';
+    font-size: 32px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #edbfff;
+}
+
+.article__text{
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+}
+
+.article__img{
+    display: block;
+    margin: -25px 0 0 125px;
+}
+
+.slider__bullets{
+    width:700px;
+    height: 170px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+
+.bullets{
+    margin-top: 20px;
+}
+
+.bullets__item{
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.bullets__item:active, 
+.bullets__item:hover{
+    background-color: white;
+    border: 2px solid #333;
+}
+/*---END HEADER---*/
+
+/*---START ABOUT---*/
+.company{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background: rgba(116,80,131,1);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(116,80,131,1)), color-stop(100%, rgba(50,37,57,1)));
+    background: -webkit-linear-gradient(top, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
+    background: linear-gradient(to bottom, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', endColorstr='#322539', GradientType=0 );
+}
+
+.company__wrapper{
+    width: 960px;
+    height: 340px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.company__container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.company__icon{
+    width: 32px;
+    height: 32px;
+    margin: 8px 25px 0 0;
+    background-image: url(../img/sprite.png);
+    background-position: -63px -65px;
+}
+
+.company__icon_speech{
+    background-position: -95px -65px;
+}
+
+.company__icon_notes{
+    background-position: -128px -65px;
+}
+
+.about{
+    width: 226px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: white;
+    text-shadow: 1px 1px 0px rgb(15, 21, 24);
+}
+
+.about__header{
+    font-family: 'League Gothic';
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.about__link:hover{
+    color: #edbfff;
+}
+
+.about__text{
+    height: 118px;
+    line-height: 1.5rem;
+    overflow: hidden;
+}
+
+.about__more{
+    margin-top: 20px;
+    font-family: 'League Gothic';
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.about__link_more:hover{
+  text-shadow: 0px 0px 8px rgb(255, 255, 255);
+}
+/*---END ABOUT---*/
+
+/*---START INFO---*/
+.info{
+   background-color: #f9f9f9; 
+}
+
+.news{
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.news__wrapper{
+    width: 960px;
+    height: 487px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+/*---QUOTE---*/
+
+.quote{
+    height: 312px;
+}
+
+.quote__container{
+    width: 426px;
+    height: 274px;
+    background-color: white;
+    position: relative;
+    box-shadow: 2px 2px 2px -3px #000;
+    padding: 22px 35px 35px;
+}
+
+.quote__container::after{
+   content: '';
+   display: block;
+   position: absolute;
+   right: 40px;
+   bottom: -11px;
+   width: 30px;
+   height: 30px;
+   box-shadow: 2px 2px 2px -3px #000;
+   background-color: white;
+   -webkit-transform: rotate(66deg) skew(30deg);
+           transform: rotate(66deg) skew(30deg);
+}
+
+.quote__link{
+    display: block;
+    height: 51px;
+    background: url(../img/photo.png) no-repeat;
+    margin-left: -60px;
+    line-height: 51px;
+}
+
+.quote__header{
+    padding-left: 60px;
+    font-family: 'League Gothic';
+    font-size: 30px;
+    color: #edbfff;
+    text-transform: uppercase;
+}
+
+.quote__text{
+    overflow: hidden;
+    line-height: 24px;
+}
+
+.quote__beginning{
+    color: #454545;
+}
+
+.quote__bullets{
+    text-align: center;
+}
+
+.bullets__item_light{
+    border: 1px solid #f0f0f0;
+    background-color: white;
+}
+
+.bullets__item:active, 
+.bullets__item:hover{
+    background-color: #5a5a5a;
+    border: 2px solid white;
+}
+
+/*---RECENT---*/
+
+.recent{
+    height: 312px;
+    padding-top: 35px;
+}
+
+.recent__header{
+    font-family: 'League Gothic';
+    font-size: 30px;
+    color: #454545;
+    text-transform: uppercase;
+}
+
+.recent__list{
+    margin-top: 22px;
+}
+
+.updates{
+    height: 49px;
+    background: url(../img/news1.png) no-repeat;
+    margin-top: 20px;
+    padding-left: 56px;
+    line-height: 24px;
+}
+
+.updates__header{
+    font-family: 'OpenSans ExtraBold';
+}
+
+.recent__more{
+    margin-top: 20px;
+    font-family: 'League Gothic';
+    font-size: 18px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.recent__link:hover{
+    text-decoration: underline;
+}
+
+/*---BRANDS---*/
+
+.brands{
+    height: 122px;
+    border-bottom: 1px solid #e6e6e6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.brands__wrapper{
+    width: 960px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.brands__link{
+    display: block;
+    background-image: url(../img/sprite.png);
+}
+
+.billabong{
+    width: 68px;
+    height: 64px;
+    background-position: 0 0;
+}
+
+.dg{
+    width: 72px;
+    height: 64px;
+    background-position: -70px 0;
+}
+
+.tree{
+    width: 63px;
+    height: 64px;
+    background-position: -144px 0;
+}
+
+.awsm{
+    width: 50px;
+    height: 64px;
+    background-position: -209px 0;
+}
+
+.rvca{
+    width: 103px;
+    height: 21px;
+    background-position: -261px 0;
+}
+
+.vonz{
+    width: 78px;
+    height: 61px;
+    background-position: -364px 0;
+}
+/*---END INFO---*/
+
+/*---TAGS---*/
+.tags{
+    height: 396px;
+    background-color: #ececec;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.tags__wrapper{
+    width: 960px;
+    height: 198px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+
+.tags__block{
+    height: 198px;
+    width: 283px;
+    overflow: hidden;
+    color: #787878;
+    text-shadow: 0px 1px 0px rgb(255, 255, 255);
+}
+
+.tags__block:last-child{
+    display: none;
+}
+
+.tags__header{
+    font-family: 'League Gothic';
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.logo__end_bottom{
+  color: rgb(185, 185, 185);
+}
+
+.tags__copyright{
+    margin: 8px 0;
+    font-family: Georgia;
+    color: #c5c5c5;
+    font-style: italic;
+}
+
+.tags__text{
+    line-height: 24px;
+}
+
+.tags__link{
+    font-size: 30px;
+}
+
+.tags__block_tag{
+    margin-top: -15px;
+    height: 214px;
+}
+/*---END TAGS*/
+
+/*---START FOOTER---*/
+footer{
+    height: 115px;
+    background: url(../img/bottom-bg.jpg) center bottom;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.footer__wrapper{
+    width: 960px;
+    height: 22px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.menu_footer{
+    width: 60%;
+    height: 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: 'League Gothic';
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 2px rgb(0, 0, 0);
+}
+
+.menu__link_footer{
+    margin: 0 13px;
+    padding: 0 6px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.footer__design{
+    font-size: 12px;
+    color: white;
+    text-shadow: 1px 2px 2px rgb(0, 0, 0);
+}
+
+.footer__link{
+    font-family: 'OpenSans ExtraBold';
+}
+/*---END FOOTER---*/
+
+/*---MEDIA QUERIES---*/
+
+/*---------------------960---------------------*/
+
+@media screen and (max-width: 960px){
+    .navigation{
+        width: 768px;
+        height: 106px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                    -ms-grid-row-align: flex-start;
+                align-items: flex-start;
+    }
+    
+    .menu{
+        margin-left: -20px;
+    }
+    
+    .article{
+        width: 704px;
+    }
+    
+    .article__wrapper{
+        width: 400px;
+        margin: 0;
+    }
+    
+    .article__img{
+        margin-left: 10px;
+    }
+    
+    .company__wrapper{
+        width: 768px;
+    }
+    
+    .about{
+        width: 155px;
+    }
+    
+    .about__text{
+        height: 124px;
+    }
+    
+    .news__wrapper{
+        width: 768px;
+    }
+    
+    .quote__container{
+        width: 314px;
+        height: 274px;
+    }
+    
+    .quote__text{
+        height: 170px;
+    }
+    
+    .brands__wrapper{
+        width: 768px;
+    }
+    
+    .tags__wrapper{
+        width: 768px;
+    }
+    
+    .tags__block{
+        width: 200px;
+        height: 214px;
+    }
+    
+    .tags__block_tag{
+        margin-top: -10px;
+    }
+    
+    .tags__block:first-child{
+        display: none;
+    }
+    
+    .tags__block:last-child{
+        display: block;
+    }
+    
+    .footer__wrapper{
+        width: 768px;
+        height: 55px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    
+    .menu_footer{
+        width: 100%;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+    
+    .menu__link_footer{
+        margin: 0 28px;
+    }
+    
+    .footer__design{
+        width: 100%;
+        text-align: right;
+    }
+        
+}
+
+/*---------------------768---------------------*/
+
+@media screen and (max-width: 768px){
+    .navigation{
+        width: 480px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                    -ms-grid-row-align: center;
+                align-items: center;
+        position: relative;
+    }
+    
+    .navigation__menu{
+        position: absolute;
+        left: 0;
+        right: 0;
+		top: 0;
+        bottom: 0;
+        width: 245px;
+        height: 46px;
+        margin: 70px auto 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        overflow: hidden;
+        background-color: rgba(63, 50, 71, 0.9);
+        border-radius: 5px;
+        border: 1px solid black;
+        box-shadow: 1px 1px 2px 0px #000;
+        text-align: center;
+    }
+    
+    .navigation__menu:hover{
+        height: 276px;
+    }
+    
+    .navigation__link{
+        display: block;
+        width: 245px;
+        height: 46px;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid rgba(54, 40, 62, 0.9);
+        line-height: 46px;
+    }
+    
+    .slider{
+        margin-top: 92px;
+    }
+    
+    .slider__bullets{
+        width: 416px;
+    }
+    
+    .article{
+        width: 416px;
+    }
+    
+    .article__wrapper{
+        width: 206px;
+        margin-top: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    
+    .article__first_header{
+        font-size: 36px;
+        line-height: 36px;
+    }
+    
+    .article__second_header{
+        height: 24px;
+        font-size: 18px;
+        line-height: 24px;
+        overflow: hidden;
+    }
+    
+    .article__text{
+        display: none;
+    }
+    
+    .article__img{
+        margin-left: 0;
+    }
+    
+    .company__wrapper{
+        width: 480px;
+        height: 806px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 70px 0;
+    }
+    
+    .company__about{
+        width: 370px;
+        margin: 10px 0;
+    }
+    
+    .news__wrapper{
+        width: 480px;
+        height: 762px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 70px 0;
+    }
+    
+    .brands{
+        height: 264px;
+    }
+    
+    .brands__wrapper{
+        width: 375px;
+        padding: 36px 0;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    
+    .brands__link{
+        margin: 16px;
+    }
+    
+    .tags{
+        height: 664px;
+    }
+    
+    .tags__wrapper{
+        width: 480px;
+        height: 664px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 70px 0;
+    }
+    
+    .tags__block{
+        width: 480px;
+        height: 128px;
+        margin: 20px 0;
+    }
+    
+    .tags__header{
+        font-size: 24px;
+    }
+    
+    .footer__wrapper{
+        width: 480px;
+    }
+    
+    .menu_footer{
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    
+    .menu__link_footer{
+        margin: 0;
+    }
+    
+    .footer__design{
+        width: auto;
+    }
+    
+}
+
+/*---------------------480---------------------*/
+
+@media screen and (max-width: 480px){
+    .navigation{
+        width: 320px;
+    }
+    
+    .navigation__menu{
+        width: 136px;
+        background: none;
+        border: 0;
+        box-shadow: none;
+    }
+    
+    .navigation__link{
+        width: 136px;
+        border: 0;
+    }
+    
+    .slider__bar{
+        background: none;
+        height: 256px;
+    }
+    
+    .article{
+        width: 208px;
+    }
+    
+    .article__img{
+        display: none;
+    }
+    
+    .slider__bullets{
+        width: 256px;
+    }
+    
+    .company__wrapper{
+        width: 320px;
+    }
+    
+    .news__wrapper{
+        width: 320px;
+    }
+    
+    .quote__container{
+        width: 256px;
+        height: 270px;
+    }
+    
+    .quote__container::after{
+        display: none;
+    }
+    
+    .quote__header{
+        width: 100px;
+        font-size: 24px;
+        line-height: 24px;
+    }
+    
+    .recent{
+        width: 270px;
+    }
+    
+    .recent__link{
+        display: block;
+        width: 154px;
+        height: 24px;
+        overflow: hidden; 
+    }
+    
+    .updates__text{
+        width: 216px;
+        height: 21px;
+        overflow: hidden;
+    }
+    
+    .brands{
+        height: 304px;
+    }
+    
+    .brands__wrapper{
+        width: 264px;
+    }
+    
+    .tags{
+        display: none;
+    }
+    
+    .footer__wrapper{
+        width: 320px;
+    }
+    
+    .menu_footer{
+        display: none;
+    }
+    
+}
