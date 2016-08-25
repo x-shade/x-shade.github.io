@@ -32,6 +32,7 @@ a{
 /*---START HEADER---*/
 
 header{
+    position: absolute;
     background: #069;
     height: 36px;
     width: 100%;
