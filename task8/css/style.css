@@ -35,10 +35,19 @@ a, div, section, article, aside, nav, ul, li, img{
     box-sizing: border-box;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 body{
-    min-width: 384px;
     font-family: 'OpenSans Light', Arial, sans-serif; 
     font-size: 16px;
+}
+
+.wrapper{
+    width: 95%;
+    max-width: 1080px;
 }
 
 /*---HEADER START---*/
@@ -60,7 +69,6 @@ header{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 960px;
     margin: 0 auto;
     font-family: 'League Gothic';
     text-transform: uppercase;
@@ -100,7 +108,7 @@ header{
 }
 
 .menu__link{
-    height: 24px;
+    height: 28px;
     margin: 0 13px;
     padding: 0 6px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
@@ -149,7 +157,6 @@ header{
 }
 
 .article{
-    width: 960px;
     text-shadow: 0px 2px 2px rgba( 0, 0, 0, 0.3);
 }
 
@@ -164,6 +171,7 @@ header{
 }
 
 .article__wrapper{
+/*    width: 53%;*/
     width: 507px;
     height: 234px;
     margin-top: 85px;
@@ -196,6 +204,7 @@ header{
 }
 
 .slider__bullets{
+/*    width: 70%;*/
     width:700px;
     height: 170px;
     margin: 0 auto;
@@ -244,7 +253,6 @@ header{
 }
 
 .company__wrapper{
-    width: 960px;
     height: 340px;
     margin: 0 auto;
     display: -webkit-box;
@@ -281,7 +289,7 @@ header{
 }
 
 .about{
-    width: 226px;
+    width: 64%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -332,7 +340,6 @@ header{
 }
 
 .news__wrapper{
-    width: 960px;
     height: 487px;
     margin: 0 auto;
     display: -webkit-box;
@@ -344,6 +351,10 @@ header{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+}
+
+.news__left, .news__right{
+    width: 50%;
 }
 
 /*---QUOTE---*/
@@ -359,6 +370,7 @@ header{
     position: relative;
     box-shadow: 2px 2px 2px -3px #000;
     padding: 22px 35px 35px;
+    margin: 0 auto;
 }
 
 .quote__container::after{
@@ -401,6 +413,7 @@ header{
 }
 
 .quote__bullets{
+    margin-top: 36px;
     text-align: center;
 }
 
@@ -443,6 +456,7 @@ header{
     margin-top: 20px;
     padding-left: 56px;
     line-height: 24px;
+    overflow: hidden;
 }
 
 .updates_2{
@@ -483,7 +497,6 @@ header{
 }
 
 .brands__wrapper{
-    width: 960px;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -499,6 +512,7 @@ header{
 .brands__link{
     display: block;
     background-image: url(../img/sprite.png);
+    margin: auto;
 }
 
 .billabong{
@@ -551,7 +565,6 @@ header{
 }
 
 .tags__wrapper{
-    width: 960px;
     height: 198px;
     margin: 0 auto;
     display: -webkit-box;
@@ -567,7 +580,8 @@ header{
 
 .tags__block{
     height: 198px;
-    width: 283px;
+    width: 30%;
+/*    width: 283px;*/
     overflow: hidden;
     color: #787878;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3);
@@ -620,7 +634,6 @@ footer{
             align-items: center;
 }
 .footer__wrapper{
-    width: 960px;
 /*    height: 22px;*/
     margin: 0 auto;
     display: -webkit-box;
@@ -669,8 +682,12 @@ footer{
 /*---------------------960---------------------*/
 
 @media screen and (max-width: 960px){
+    .wrapper{
+    max-width: 864px;
+    }
+    
     .navigation{
-        width: 768px;
+/*        width: 768px;*/
         height: 106px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -684,10 +701,13 @@ footer{
     
     .menu{
         margin-left: -20px;
-    }
-    
-    .article{
-        width: 704px;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     
     .article__wrapper{
@@ -699,20 +719,21 @@ footer{
         margin-left: 10px;
     }
     
-    .company__wrapper{
-        width: 768px;
+    .slider{
+        margin-top: 86px;
     }
     
-    .about{
-        width: 155px;
+    .slider__bullets{
+        width:500px;
+        height: 125px;
+    }
+    
+    .bullets{
+        margin-top: 0;
     }
     
     .about__text{
         height: 124px;
-    }
-    
-    .news__wrapper{
-        width: 768px;
     }
     
     .quote__container{
@@ -722,14 +743,6 @@ footer{
     
     .quote__text{
         height: 170px;
-    }
-    
-    .brands__wrapper{
-        width: 768px;
-    }
-    
-    .tags__wrapper{
-        width: 768px;
     }
     
     .tags__block{
@@ -750,7 +763,6 @@ footer{
     }
     
     .footer__wrapper{
-        width: 768px;
         height: 55px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -766,7 +778,7 @@ footer{
     }
     
     .menu__link_footer{
-        margin: 0 28px;
+        margin: 0 20px;
     }
     
     .footer__design{
@@ -779,24 +791,32 @@ footer{
 /*---------------------768---------------------*/
 
 @media screen and (max-width: 768px){
+    .wrapper{
+    max-width: 540px;
+    }
+    
     .navigation{
-        width: 480px;
         -webkit-box-align: center;
             -ms-flex-align: center;
                     -ms-grid-row-align: center;
                 align-items: center;
+        width: 244px;
         position: relative;
+    }
+    
+    .logo{
+        margin: 0 auto;
     }
     
     .navigation__menu{
         position: absolute;
         left: 0;
         right: 0;
-		top: 0;
+		top: 60px;
         bottom: 0;
-        width: 245px;
+        width: 244px;
         height: 46px;
-        margin: 70px auto 0;
+        margin: 0 auto;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -826,16 +846,28 @@ footer{
         line-height: 46px;
     }
     
+    .navigation__link:hover{
+        background-color: rgba(43, 34, 49, 1);
+    }
+    
     .slider{
-        margin-top: 92px;
+        margin-top: 26px;
+    }
+    
+    .slider__bar{
+        height: 240px;
     }
     
     .slider__bullets{
-        width: 416px;
+        height: 100px;
     }
     
-    .article{
-        width: 416px;
+    .bullets{
+        margin: -10px auto 0;
+    }
+    
+    .article__link{
+        height: 240px;
     }
     
     .article__wrapper{
@@ -870,12 +902,12 @@ footer{
     }
     
     .article__img{
-        margin-left: 0;
+        height: 300px;
+        margin-top: 36px;
     }
     
     .company__wrapper{
-        width: 480px;
-        height: 806px;
+        height: 658px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -884,12 +916,15 @@ footer{
     }
     
     .company__about{
-        width: 370px;
+        width: 93%;
         margin: 10px 0;
     }
     
+    .about__text{
+        height: 70px;
+    }
+    
     .news__wrapper{
-        width: 480px;
         height: 762px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -898,28 +933,48 @@ footer{
         padding: 70px 0;
     }
     
+    .quote{
+        width: 80%;
+    }
+    
+    .quote__container{
+        width: 100%;
+    }
+    
+    .recent{
+        width: 67%;
+    }
+    
     .brands{
         height: 264px;
     }
     
     .brands__wrapper{
-        width: 375px;
         padding: 36px 0;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    
+    .brands__item{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 33.3%;
     }
     
     .brands__link{
-        margin: 16px;
+        margin: 16px auto;
     }
     
     .tags{
-        height: 664px;
+        height: 633px;
     }
     
     .tags__wrapper{
-        width: 480px;
-        height: 664px;
+        height: 633px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -928,7 +983,7 @@ footer{
     }
     
     .tags__block{
-        width: 480px;
+        width: 100%;
         height: 128px;
         margin: 20px 0;
     }
@@ -937,22 +992,27 @@ footer{
         font-size: 24px;
     }
     
-    .footer__wrapper{
-        width: 480px;
-    }
-    
     .menu_footer{
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
+        margin: 0;
     }
     
     .menu__link_footer{
         margin: 0;
     }
     
+    .footer__wrapper{
+        height: 72px;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+    
     .footer__design{
         width: auto;
+        margin-top: 10px;
     }
     
 }
@@ -960,9 +1020,6 @@ footer{
 /*---------------------480---------------------*/
 
 @media screen and (max-width: 480px){
-    .navigation{
-        width: 320px;
-    }
     
     .navigation__menu{
         width: 136px;
@@ -988,11 +1045,7 @@ footer{
     
     .slider__bar{
         background: none;
-        height: 256px;
-    }
-    
-    .article{
-        width: 208px;
+        height: 208px;
     }
     
     .article__img{
@@ -1000,23 +1053,19 @@ footer{
     }
     
     .slider__bullets{
-        width: 256px;
+        width: 100px;
+        height: 80px;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                    -ms-grid-row-align: flex-start;
+                align-items: flex-start;
     }
     
-    .company__wrapper{
-        width: 320px;
-    }
-    
-    .about{
-        width: 320px;
-    }
-    
-    .news__wrapper{
-        width: 320px;
+    .bullets{
+        margin: 0;
     }
     
     .quote__container{
-        width: 256px;
         height: 270px;
     }
     
@@ -1030,19 +1079,13 @@ footer{
         line-height: 24px;
     }
     
-    .recent{
-        width: 270px;
-    }
-    
     .recent__link{
         display: block;
-        width: 154px;
         height: 24px;
         overflow: hidden; 
     }
     
     .updates__text{
-        width: 216px;
         height: 21px;
         overflow: hidden;
     }
@@ -1051,20 +1094,32 @@ footer{
         height: 304px;
     }
     
-    .brands__wrapper{
-        width: 264px;
+    .brands__item{
+        width: 50%;
     }
     
     .tags{
         display: none;
     }
     
-    .footer__wrapper{
-        width: 320px;
-    }
-    
     .menu_footer{
         display: none;
     }
     
+}
+
+/*---------------------320---------------------*/
+
+@media screen and (max-width: 320px){
+    .slider__article{
+        width: 70%;
+    }
+    
+    .company__about{
+        width: 70%;
+    }
+    
+    .about__text{
+        height: 52px;
+    }
 }
