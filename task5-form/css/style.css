@@ -24,7 +24,7 @@ a{
 
 .all{
     height: 100%;
-/*    overflow: hidden;*/
+    overflow: hidden;
     font-size: 14px;
     color: white;
 }
