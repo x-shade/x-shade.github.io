@@ -808,13 +808,13 @@ footer{
         margin: 0 auto;
     }
     
-     .navigation__menu{
+    .navigation__menu{
         position: absolute;
         left: 0;
         right: 0;
 		top: 60px;
         width: 244px;
-/*        height: 46px;*/
+        height: 46px;
         margin: 0 auto;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -823,7 +823,7 @@ footer{
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-/*        overflow: hidden;*/
+        overflow: hidden;
         z-index: 10;
         background-color: rgba(63, 50, 71, 0.9);
         border-radius: 5px;
@@ -832,13 +832,9 @@ footer{
         text-align: center;
     }
     
-    .menu_visible{
-        visibility: hidden;
-    }
     
-    .navigation__menu:hover .menu_visible{
-/*        height: 276px;*/
-        visibility: visible;
+    .navigation__menu:hover{
+        height: 276px;
     }
     
     .navigation__link{
