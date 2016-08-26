@@ -812,8 +812,7 @@ footer{
         position: absolute;
         left: 0;
         right: 0;
-		top: 60px;
-        bottom: 0;
+	top: 60px;
         width: 244px;
         height: 46px;
         margin: 0 auto;
@@ -825,6 +824,7 @@ footer{
             -ms-flex-direction: column;
                 flex-direction: column;
         overflow: hidden;
+        z-index: 10;
         background-color: rgba(63, 50, 71, 0.9);
         border-radius: 5px;
         border: 1px solid black;
