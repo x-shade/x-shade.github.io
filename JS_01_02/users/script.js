@@ -22,18 +22,24 @@
     function hello(name) {
         var check = false;
         
-        for (var k = 0; k < arr.length; ++k) {
-            if (name == arr[k]) {
-                check = true;
-            }
-        }
-        
-        if (check == true) {
-            alert(name + ', Вы успешно вошли');
-            console.log(name + ', Вы успешно вошли');
+        if (name == null) {
+            alert ('Вы не ввели имя пользователя');
+                console.log('Ошибка, отсутствует имя пользователя');
         } else {
-            alert('Пользователя с таким именем нет');
-            console.log('Ошибка, пользователя с таким именем нет');
+        
+            for (var k = 0; k < arr.length; ++k) {
+                if (name == arr[k]) {
+                    check = true;
+                }
+            }
+
+            if (check == true) {
+                alert(name + ', Вы успешно вошли');
+                console.log(name + ', Вы успешно вошли');
+            } else {
+                alert('Пользователя с таким именем нет');
+                console.log('Ошибка, пользователя с таким именем нет');
+            }
         }
     }
     
