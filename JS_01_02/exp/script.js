@@ -23,28 +23,40 @@
         return result;   
       }
     
-    var num = prompt('Введите целое число a', '');
+    function calculate() {
     
-    if (parseInt(num) == num) {
-      var a = num;
-      console.log ('a = ' + a);
+        var num = prompt('Введите целое число a', '');
         
-      var ex = prompt('Введите степень x (целое число), в которую нужно возвести a', '');
-        
-      if (parseInt(ex) == ex) {
-        var x = ex;
-        console.log ('x = ' + x);
-          
-        alert ( 'Результат равен ' + pow(a,x) );
-        console.log ( 'Результат равен ' + pow(a,x) );
-    } else {
-        alert('Вы допустили ошибку, введите целую степень x');
-        console.log ('Ошибка, x = ' + ex);
-       }
-    
-     } else {
-        alert('Вы допустили ошибку, число a должно быть целым');
-        console.log ('Ошибка, a = ' + num);
+        var message = {
+            equal: 'Результат равен ', 
+            error: 'Вы допустили ошибку, ',
+            errX: 'введите целую степень x',
+            errA: 'число a должно быть целым'
+        };
+
+        if (parseInt(num) == num) {
+          var a = num;
+          console.log ('a = ' + a);
+
+          var ex = prompt('Введите степень x (целое число), в которую нужно возвести a', '');
+
+          if (parseInt(ex) == ex) {
+            var x = ex;
+            console.log ('x = ' + x);
+
+            alert ( message.equal + pow(a,x) );
+            console.log ( message.equal + pow(a,x) );
+        } else {
+            alert( message.error + message.errX );
+            console.log ('Ошибка, x = ' + ex);
+           }
+
+         } else {
+            alert(message.error + message.errA );
+            console.log ('Ошибка, a = ' + num);
+        }
     }
+    
+    calculate();
     
 }());
