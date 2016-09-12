@@ -9,39 +9,50 @@
         
         for (i = 0; i < arr.length; ++i) {
         arr[i] = prompt('Введите имя пользователя ' + (i + 1), '');
-      }
+      };
         
     console.log(arr);
-    }
+    };
     
     fillArray();
     
     var name = prompt('Введите Ваше имя', '');
     console.log(name);
     
-    function hello(name) {
+    var message = {
+        nullName: 'Вы не ввели имя пользователя',
+        nullNameConsole: 'Ошибка, отсутствует имя пользователя', 
+        loginComplete: ', Вы успешно вошли',
+        loginError: 'Ошибка входа, пользователя с таким именем нет'
+    };
+    
+    function validateData(name) {
         var check = false;
         
-        if (name == null) {
-            alert ('Вы не ввели имя пользователя');
-                console.log('Ошибка, отсутствует имя пользователя');
-        } else {
-        
-            for (var k = 0; k < arr.length; ++k) {
-                if (name == arr[k]) {
+        for (var k = 0; k < arr.length; ++k) {
+            if (name == arr[k]) {
                     check = true;
-                }
-            }
-
-            if (check == true) {
-                alert(name + ', Вы успешно вошли');
-                console.log(name + ', Вы успешно вошли');
-            } else {
-                alert('Пользователя с таким именем нет');
-                console.log('Ошибка, пользователя с таким именем нет');
             }
         }
-    }
+
+        if (check == true) {
+            alert(name + message.loginComplete);
+            console.log(name + message.loginComplete);
+        } else {
+            alert( message.loginError );
+            console.log( message.loginError );
+        }
+    };
     
-    hello(name);
+    function authoriseUser(name) {
+        
+        if (name == null) {
+            alert ( message.nullName );
+                console.log( message.nullNameConsole );
+        } else {
+            validateData(name);
+        }
+    };
+    
+    authoriseUser(name);
 }());
