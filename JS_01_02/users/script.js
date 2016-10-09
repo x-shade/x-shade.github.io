@@ -46,7 +46,7 @@
     
     function authoriseUser(name) {
         
-        if (name == null) {
+        if (!name) {
             alert ( message.nullName );
                 console.log( message.nullNameConsole );
         } else {
