@@ -1,6 +1,17 @@
 'use strict'; 
 
 (function () {
+    var a = prompt('Введите целое число a', '');
+    
+    var x = prompt('Введите степень x (целое число), в которую нужно возвести a', '');
+    
+    var message = {
+            equal: 'Результат равен ', 
+            error: 'Вы допустили ошибку в значениях, ',
+            errX: 'введите целую степень x',
+            errA: 'число a должно быть целым',
+            errTotal: 'Ошибка в значениях функции!'
+        };
     
     function pow(a, x) {
         var result = 1;
@@ -23,40 +34,43 @@
         return result;   
       }
     
-    function calculate() {
-    
-        var num = prompt('Введите целое число a', '');
-        
-        var message = {
-            equal: 'Результат равен ', 
-            error: 'Вы допустили ошибку, ',
-            errX: 'введите целую степень x',
-            errA: 'число a должно быть целым'
-        };
+    function checkUserData () {
+        check = 0;
 
-        if (parseInt(num) == num) {
-          var a = num;
+        if (parseInt(a) == a) {
           console.log ('a = ' + a);
 
-          var ex = prompt('Введите степень x (целое число), в которую нужно возвести a', '');
-
-          if (parseInt(ex) == ex) {
-            var x = ex;
+          if (parseInt(x) == x) {
             console.log ('x = ' + x);
-
+          } else {
+              alert( message.error + message.errX );
+              console.log ('Ошибка, x = ' + x);
+              check++;
+          }
+            
+        } else {
+            alert(message.error + message.errA );
+            console.log ('Ошибка, a = ' + a);
+            check++;
+        }
+        
+        console.log ('check = ' + check);
+        return check;
+    }
+    
+    var check = checkUserData ();
+    
+    function calculate (check) {
+    
+        if (check == 0) {
             alert ( message.equal + pow(a,x) );
             console.log ( message.equal + pow(a,x) );
         } else {
-            alert( message.error + message.errX );
-            console.log ('Ошибка, x = ' + ex);
-           }
-
-         } else {
-            alert(message.error + message.errA );
-            console.log ('Ошибка, a = ' + num);
+            alert(message.errTotal)
         }
+        
     }
     
-    calculate();
+    calculate (check);
     
 }());
