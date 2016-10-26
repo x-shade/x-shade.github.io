@@ -1,0 +1,99 @@
+@font-face{
+    font-family: Open Sans;
+    src: url(../fonts/open-sans.ttf);
+}
+
+html, body {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 12px;
+}
+
+body{
+    background-color: #ccc;
+}
+
+#test{
+    background-color: white;
+    width: 800px;
+    padding: 40px 80px;
+    margin: 20px auto;
+    border: 1px solid black;
+}
+
+h1{
+    width: 221px;
+    margin: 0 auto 20px;
+    font-size: 16px;
+}
+
+h3{
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.option{
+    padding: 5px 10px;
+}
+
+/* style for original checkbox */
+.checkbox{
+    vertical-align: top;
+    width: 12px;
+    height: 12px;
+}
+
+/* clickable label */
+label {
+  cursor: pointer;
+}
+
+/* hide original checkbox */
+.checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox:not(checked) + label {
+  position: relative; /* pseudocheckbox will be positioned relatively to label */
+  padding: 0 0 0 20px; /* there will be pseudocheckbox to the left of label */
+}
+
+/* stylize background unchecked checkbox */
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border: 2px solid black;
+  background-color: #cde2f5;
+}
+
+/* stylize flag in unchecked checkbox */
+.checkbox:not(checked) + label:after {
+  content: '\2714';
+  position: absolute;
+  z-index: 2;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  color: black;
+}
+
+/* stylize cecked checkbox */
+.checkbox:checked + label:after {
+  z-index: 4;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 30px;
+    background-color: #cde2f5;
+    border: 2px solid black;
+    font-size: 16px;
+}
